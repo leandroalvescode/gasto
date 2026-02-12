@@ -13,8 +13,10 @@ class Gasto{
 }
 
 class ControleDegastos{
+
    final List <Gasto>_gastos = [];
 
+   List<Gasto> get gastos =>List.unmodifiable(_gastos);
 
   void adicionarGasto(Gasto gasto){
     _gastos.add(gasto);
@@ -27,4 +29,5 @@ class ControleDegastos{
     }
     return soma;
   }
+
 }
