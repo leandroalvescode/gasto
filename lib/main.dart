@@ -10,7 +10,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: TelaControleDeGastos());
+    return MaterialApp(
+      home: TelaControleDeGastos());
   }
 }
 
@@ -24,6 +25,7 @@ class TelaControleDeGastos extends StatefulWidget {
 
 class _TelaControleDeGastos extends State<TelaControleDeGastos> {
   final ControleDegastos _controle = ControleDegastos();
+
   
   void novoGasto(double valor, String descricao, String formaDePagamento){
     _controle.adicionarGasto(
